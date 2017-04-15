@@ -10,9 +10,10 @@ class User(peewee.Model):
 
 	class Meta:
 		database = database
-		db_table = "Users"
+		db_table = "users"
 
 if __name__ == '__main__':
+
 	if not User.table_exists():
 		User.create_table()
 
